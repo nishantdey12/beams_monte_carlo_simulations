@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 from numpy.random import rand
-D, L, N = 10, 8, 1000
+D, L, N = 10, 8, 2000
 # y = needle centres
 y = rand(N)*D
 # vertical distances between needle centres and needle ends
@@ -32,8 +32,8 @@ PI = 2*L/(f*D)
 print(PI)
 
 x = np.arange(1, 1001)
-y = np.pi * np.ones(1000)
-Pi_part = np.empty(1000)
+y = np.pi * np.ones(2000)
+Pi_part = np.empty(2000)
 
 # print(x)
 
@@ -55,7 +55,7 @@ for i in range(0, 100, 1):
     # print(t[0])
     No_of_values_in_interval[i] = len(t[0])
 
-pdf=plt.hist(Pi_part, 1000, range=[0, 5], density=True)
+pdf=plt.hist(Pi_part, 2000, range=[0, 5], density=True)
 plt.show()
 #pdf and cdf thing going on
 plt.plot(pdf[1][:-1], pdf[0])

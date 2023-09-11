@@ -8,9 +8,11 @@ R=1; Rc=1.5
 N=1000
 #s=displacement fro axis
 #r=radii
-r=np.sqrt(rand(N)*R**4)
-# array=np.linspace(1,1000, 1000)
-# plt.scatter(array,r)
+plt.axes(projection='polar')
+r=np.sqrt(rand(N)*R**2)
+array=np.linspace(0,(2*np.pi), 1000)
+plt.scatter(array,r)
+plt.title("r **2 only")
 plt.show()
 theta=rand(N)*2*np.pi
 s=r*np.sin(theta) #take reference of polar coord
@@ -20,6 +22,9 @@ s=r*np.sin(theta) #take reference of polar coord
 deno=1/(Rc-s)#array
 num=s*deno
 
+h1=num/deno
+plt.scatter(array,h1)
+plt.show()
 h=np.trapz(num)/np.trapz(deno)
 print(h)
 

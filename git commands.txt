@@ -1,0 +1,26 @@
+PS D:\python\monte carlo> echo "# beams_monte_carlo_simulations" >> README.md
+PS D:\python\monte carlo> git init
+Reinitialized existing Git repository in D:/python/monte carlo/.git/
+PS D:\python\monte carlo> git add README.md                                  
+PS D:\python\monte carlo> git commit -m "pushing to github"
+[main 9353735] pushing to github
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS D:\python\monte carlo> git branch -M main
+PS D:\python\monte carlo> git remote add origin https://github.com/nishantdey12/beams_monte_carlo_simulations.git
+error: remote origin already exists.
+PS D:\python\monte carlo> git remote rm origin
+PS D:\python\monte carlo> git remote add origin https://github.com/nishantdey12/beams_monte_carlo_simulations.git
+PS D:\python\monte carlo> git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (16/16), 16.86 KiB | 1015.00 KiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/nishantdey12/beams_monte_carlo_simulations.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\python\monte carlo> 
+PS D:\python\monte carlo>

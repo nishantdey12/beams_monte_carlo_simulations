@@ -1,0 +1,10 @@
+for confidence levels, z score
+mean +-1.96 times sd =95% confidence
+        1.645 times sd =90% confidence
+        2.58 times sd=99% confidence
+
+our best estimate of the exact value is 
+    mean-(z fac)*stand error and
+    mean+(z fac)*stand error to that % confidence
+
+the significant dgits that match is what we can be sure of
